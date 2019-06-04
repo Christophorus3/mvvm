@@ -16,6 +16,7 @@
 		9E6DB42522A3E553005C2FFD /* CourseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB42422A3E553005C2FFD /* CourseCell.swift */; };
 		9E6DB42822A3E8F6005C2FFD /* CoursesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB42722A3E8F6005C2FFD /* CoursesController.swift */; };
 		9E6DB42B22A51243005C2FFD /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB42A22A51243005C2FFD /* Service.swift */; };
+		9E6DB42F22A66728005C2FFD /* CourseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB42E22A66728005C2FFD /* CourseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9E6DB42422A3E553005C2FFD /* CourseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCell.swift; sourceTree = "<group>"; };
 		9E6DB42722A3E8F6005C2FFD /* CoursesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesController.swift; sourceTree = "<group>"; };
 		9E6DB42A22A51243005C2FFD /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		9E6DB42E22A66728005C2FFD /* CourseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		9E6DB40D22A15568005C2FFD /* mvvm */ = {
 			isa = PBXGroup;
 			children = (
+				9E6DB42D22A66706005C2FFD /* ViewModel */,
 				9E6DB42922A51221005C2FFD /* Service */,
 				9E6DB42622A3E8D7005C2FFD /* Controller */,
 				9E6DB42322A3E518005C2FFD /* View */,
@@ -106,6 +109,14 @@
 				9E6DB42A22A51243005C2FFD /* Service.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9E6DB42D22A66706005C2FFD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9E6DB42E22A66728005C2FFD /* CourseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 			files = (
 				9E6DB42522A3E553005C2FFD /* CourseCell.swift in Sources */,
 				9E6DB42222A3E4C8005C2FFD /* Course.swift in Sources */,
+				9E6DB42F22A66728005C2FFD /* CourseViewModel.swift in Sources */,
 				9E6DB41122A15568005C2FFD /* ViewController.swift in Sources */,
 				9E6DB40F22A15568005C2FFD /* AppDelegate.swift in Sources */,
 				9E6DB42822A3E8F6005C2FFD /* CoursesController.swift in Sources */,

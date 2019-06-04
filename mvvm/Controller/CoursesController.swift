@@ -10,7 +10,7 @@ import UIKit
 
 class CoursesController: UITableViewController {
 
-    var courses = [Course]()
+    var courseViewModels = [CourseViewModel]()
     let cellId = "CourseCell"
     
     override func viewDidLoad() {
@@ -28,7 +28,8 @@ class CoursesController: UITableViewController {
                 return
             }
             
-            self.courses = courses ?? []
+            
+            self.courseViewModels = courses?.map({return CourseViewModel(course: $0)}) ?? []
             self.tableView.reloadData()
         }
     }
@@ -55,13 +56,12 @@ class CoursesController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return courses.count
+        return courseViewModels.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! CourseCell
-        let course = courses[indexPath.row]
-        cell.course = course
+        cell.courseViewModel = courseViewModels[indexPath.row]
         return cell
     }
 

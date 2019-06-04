@@ -10,19 +10,25 @@ import UIKit
 
 class CourseCell: UITableViewCell {
     
-    var course: Course! {
+    var courseViewModel: CourseViewModel! {
         didSet {
-            textLabel?.text = course.name
-            
-            if course.number_of_lessons > 35 {
-                accessoryType = .detailDisclosureButton
-                detailTextLabel?.text = "Lessons 30+ Check it out!"
-            } else {
-                detailTextLabel?.text = "Lessons: \(course.number_of_lessons)"
-                accessoryType = .none
-            }
+            textLabel?.text = courseViewModel.name
         }
     }
+    
+//    var course: Course! {
+//        didSet {
+//            textLabel?.text = course.name
+//            
+//            if course.number_of_lessons > 35 {
+//                accessoryType = .detailDisclosureButton
+//                detailTextLabel?.text = "Lessons 30+ Check it out!"
+//            } else {
+//                detailTextLabel?.text = "Lessons: \(course.number_of_lessons)"
+//                accessoryType = .none
+//            }
+//        }
+//    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
