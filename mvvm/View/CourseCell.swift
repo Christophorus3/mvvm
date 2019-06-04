@@ -14,11 +14,11 @@ class CourseCell: UITableViewCell {
         didSet {
             textLabel?.text = course.name
             
-            if course.numberOfLessons > 35 {
+            if course.number_of_lessons > 35 {
                 accessoryType = .detailDisclosureButton
                 detailTextLabel?.text = "Lessons 30+ Check it out!"
             } else {
-                detailTextLabel?.text = "Lessons: \(course.numberOfLessons)"
+                detailTextLabel?.text = "Lessons: \(course.number_of_lessons)"
                 accessoryType = .none
             }
         }

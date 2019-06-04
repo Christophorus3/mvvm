@@ -8,8 +8,14 @@
 
 import Foundation
 
+/**
+ # Course
+ 
+ A Course contains all the information of an LBTA course.
+ */
+
 struct Course: Decodable {
     let id: Int
     let name: String
-    let numberOfLessons: Int
+    let number_of_lessons: Int
 }
