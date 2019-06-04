@@ -13,23 +13,11 @@ class CourseCell: UITableViewCell {
     var courseViewModel: CourseViewModel! {
         didSet {
             textLabel?.text = courseViewModel.name
+            detailTextLabel?.text = courseViewModel.detailText
+            accessoryType = courseViewModel.accessoryType
         }
     }
     
-//    var course: Course! {
-//        didSet {
-//            textLabel?.text = course.name
-//            
-//            if course.number_of_lessons > 35 {
-//                accessoryType = .detailDisclosureButton
-//                detailTextLabel?.text = "Lessons 30+ Check it out!"
-//            } else {
-//                detailTextLabel?.text = "Lessons: \(course.number_of_lessons)"
-//                accessoryType = .none
-//            }
-//        }
-//    }
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -49,7 +37,7 @@ class CourseCell: UITableViewCell {
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         
         textLabel?.font = .boldSystemFont(ofSize: 24)
         textLabel?.numberOfLines = 0

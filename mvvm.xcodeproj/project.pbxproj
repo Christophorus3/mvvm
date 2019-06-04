@@ -64,11 +64,11 @@
 		9E6DB40D22A15568005C2FFD /* mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				9E6DB42D22A66706005C2FFD /* ViewModel */,
-				9E6DB42922A51221005C2FFD /* Service */,
 				9E6DB42622A3E8D7005C2FFD /* Controller */,
 				9E6DB42322A3E518005C2FFD /* View */,
 				9E6DB42022A3E4B5005C2FFD /* Model */,
+				9E6DB42D22A66706005C2FFD /* ViewModel */,
+				9E6DB42922A51221005C2FFD /* Service */,
 				9E6DB40E22A15568005C2FFD /* AppDelegate.swift */,
 				9E6DB41022A15568005C2FFD /* ViewController.swift */,
 				9E6DB41222A15568005C2FFD /* Main.storyboard */,
